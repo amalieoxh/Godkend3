@@ -1,20 +1,15 @@
-// laver en klasse for interesser, denne placeres over User, da User refferere tilbage til interest 
-
-class interests {
-    constructor(interests){
-    this.interests = interests;
-}}
 
 //definerer model-klasse for User
 class User {
-    constructor(name, birthday, gender, location, email, password, interests){ 
+    constructor(name, birthday, gender, location, email, password, interests, match){ 
     this.name = name;
     this.birthday = birthday;
     this.gender = gender;
     this.location = location; 
     this.email = email;
     this.password = password;
-    this.interest = interests;
+    this.interests = interests;
+    this.match = match;
 //der skal muligvis stå  this.interest = new interests;
 }};
 
@@ -43,15 +38,6 @@ class creditCard {
     }}
 
 
-
- //hvis interest er det samme skal der ske et match. Til dette benyttes filter 
- /*
-class match {
-    if(User1.interests = User2.interests) {
-    console.log('it´s a match');
-}
-}
-/*
 
 
 /*
